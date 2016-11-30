@@ -3,8 +3,6 @@ os = require 'os'
 path = require 'path'
 env = process.env
 
-if env.NODE_ENV isnt 'production' then dotenv.load()
-
 module.exports =
   env: env.NODE_ENV
   wechat:
