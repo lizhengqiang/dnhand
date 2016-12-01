@@ -18,7 +18,7 @@ textHandler = (info, req, res) ->
   user = info.user
 
   switch
-    when key is '绑定'
+    when key is '绑定2'
       comMsg.replyBind info, req, res
 
     when /.*(课|课程)表/.test key
