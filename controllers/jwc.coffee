@@ -16,11 +16,10 @@ module.exports = router = express.Router()
 router.get '/bind', (req, res) ->
   code = req.query.code
   openid = req.query.openid
-  if (openid){
+  if openid
     req.session.openid = openid
     res.render 'jwc/bind'
     return
-  }
   unless code
     oauthUrl = oauthApi
       .getAuthorizeURL "#{req.protocol}://#{req.hostname}/jwc/bind"
