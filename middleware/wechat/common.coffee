@@ -31,7 +31,7 @@ module.exports =
     desc = """
           请点击本消息绑定学号，绑定后可使用查询课表，成绩，考试信息等实用功能
           """
-    url = "#{req.protocol}://#{req.hostname}/jwc/bind"
+    url = "#{req.protocol}://#{req.hostname}/jwc/bind?openid=#{info.FromUserName}"
     logoUrl = "http://n.feit.me/img/imagetext_bg.jpg"
     imageTextItem = new ImageText(title, desc, url, logoUrl)
     res.reply([imageTextItem])
