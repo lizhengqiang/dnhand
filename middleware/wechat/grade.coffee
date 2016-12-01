@@ -87,8 +87,8 @@ module.exports =
     desc = """
           请点击本消息查看全部成绩
           """
-    url = "http://n.feit.me/info/allgrade?openid=#{info.FromUserName}"
-    logoUrl = "http://n.feit.me/public/dnhandlogo.jpg"
+    url = "http://pro.czneau.com/info/allgrade?openid=#{info.FromUserName}"
+    logoUrl = "http://pro.czneau.com/public/dnhandlogo.jpg"
     imageTextItem = new ImageText(title, desc, url, logoUrl)
     res.reply([imageTextItem])
 
