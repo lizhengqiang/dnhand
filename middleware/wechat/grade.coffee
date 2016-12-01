@@ -88,7 +88,7 @@ module.exports =
           请点击本消息查看全部成绩
           """
     url = "http://pro.czneau.com/jwc/grade/all?openid=#{info.FromUserName}"
-    logoUrl = "http://pro.czneau.com/public/dnhandlogo.jpg"
+    logoUrl = "http://pro.czneau.com/img/imagetext_bg.jpg"
     imageTextItem = new ImageText(title, desc, url, logoUrl)
     res.reply([imageTextItem])
 
